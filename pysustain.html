@@ -12,6 +12,41 @@
 <h3>PySuStaInとは<h3>
 <a href = https://www.sciencedirect.com/science/article/pii/S2352711021001096>pySuStaIn: A Python implementation of the Subtype and Stage Inference algorithm</a><br>
 <p>論文はこちら<p>
-  
+
+<h3>PySuStaInの実装</h3>
+	<h4>目次</h4>
+	<p>1.Anacondaのインストール<br>
+	2.Visual Studio Build toolのインストール<br>
+	3.環境設定<br>
+	4.シミュレーション<br></p>
+
+<h3>1.Anacondaのインストール</h3>
+	<p>Anacondaは次のページからインストールできます。
+	<a href = "https://www.anaconda.com/download">https://www.anaconda.com/download</a>
+	好きなフォルダを選択してインストールしてください。</p>
+<h3>2.Visual Studio Build toolのインストール</h3>
+	<p>WindowsのpythonではLinuxのようにC++コンパイラがOSにないため、この後の作業でErrorがでてしまいます。それを解決するのがMicrosoft C++ Build Toolsです。
+	<a herf = "Microsoft C++ Build Tools">ダウンロード</a>
+	ダウンロードしたファイルを開くと、いろいろな項目を選択してVisual Studio Build toolをインストールできますが、今回はC++に関するものだけで大丈夫です。</p>
+<h3>3.環境設定</h3>
+	<p>anacondaで仮想環境を作っていきます。</p>
+<h4>仮想環境の構築</h4>
+		<p>anacondaのインストールによって、Anaconda prompt(Miniconda)がアプリの中に入ると思います。これを開き、<br>
+		conda create env --name sustain_env pythin=3.7<br>
+		conda activate sustain_env<br>
+		conda install numpy<br>
+	これをそれぞれ実行します。</p>
+<h4>PySuStainのダウンロード</h4>
+	<p>PySuStaInのGithubページ
+		<a href = "https://github.com/ucl-pond/pySuStaIn">https://github.com/ucl-pond/pySuStaIn</a>
+	に行き、任意のフォルダにダウンロードします。Gitを使って、クローンを作っていただいても大丈夫です。<br>
+	PySuStaInをダウンロードしたら、Minicondaで<br>
+
+		cd pySuStaIn<br>
+		pip install . (もしくは　pip install -e .)<br>
+		と入力します。</p>
+
+<h4>シミュレーション</h4>
+	
 </body><!-- ここまでがページに表示される内容ですよという宣言 -->
 </html><!-- ここまでがHTMLですという終わりの宣言 -->
